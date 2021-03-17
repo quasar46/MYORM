@@ -1,0 +1,53 @@
+.content-crypto {
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+
+    img {
+        position: absolute;
+        margin-right: 70px;
+        @media (max-width: 1365.98px) {
+            // position: relative;
+        }
+        @media (max-width: 1059.98px) {
+            // position: absolute;
+            display: none;
+        }
+    }
+    @media (max-width: 767.98px) {
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 20px;
+        flex-direction: column;
+    }
+}
+
+.content-crypto__text {
+    // padding-left: 50%;
+    z-index: 1;
+    max-width: 378px;
+    margin-left: auto;
+    p {
+        font-size: 24px;
+        font-weight: 700;
+        color: $color-black;
+        margin-bottom: 50px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        @media (max-width: 767.98px) {
+            margin-bottom: 20px;
+        }
+    }
+    @media (max-width: 1059.98px) {
+        max-width: 415px;
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+        margin: 0 auto;
+    }
+    // @media (max-width: 767.98px) {
+    //     margin-left: 0;
+    //     margin-bottom: 20px;
+    // }
+}

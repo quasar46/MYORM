@@ -1,0 +1,207 @@
+doctype html
+html(lang="ru")
+    head
+        include modules/head.pug
+    body
+        //- header
+        header.main-header
+            .main-header__container.container
+                a(href="/").main-header__logo Myorm
+
+                //- menu
+                ul.main-header__menu.main-menu
+                    li
+                        a(href="#world") World lottery
+                    li
+                        a(href="#best") Best business model
+                    li
+                        a(href="#crypto") Cryptocurrency
+                    li
+                        a(href="#business") Business option
+                .main-menu__for-user.for-user-block
+                    button Sign In
+                    button.current Sign UP
+                .main-header__burger 
+                    span
+
+
+        //- hero
+        .hero 
+            .hero__container.container 
+                .hero__content
+                    h1.hero__title Business in <span class="color">Billion-Dollar</span> Industry
+                    img(src="images/hero.png" alt="" hidden)
+                    p.hero__subtitle It has never been easier to create a scalable, legal, clear, simple and transparent business
+                    .hero__buttons 
+                        button.active Get Started
+                        button Get Started
+                img(src="images/hero.png" alt="").hero__picture
+
+        //- video
+        .video 
+            .video__container.container
+                video(src="images/video.mp4" controls autoplay) 
+
+
+        //- world
+        .world#world
+            .world__container.container 
+                h2.world__title.inner-title World <span class="color">lottery</span>
+                ul
+                    li 
+                        p.current Lottery is a game familiar to everyone from childhood 
+                        p You can hardly find a person who doesn’t know this game. It’s not just that the global lottery market has been growing for years and possesses hundreds of billions USD turnover showcase. 
+
+                    li
+                        p.current Fast direct payments and daily raffles
+                        p Just imagine a business that can be built abstract away from the classic lottery industry restrictions. Partners and players from anywhere in the world, fast direct payments and daily raffles.
+
+        //-hidden
+        .hidden
+
+        //- best
+        .best#best
+            .best__container.container 
+                h2.best__title.inner-title Best <span class="color">business</span> model
+                .best-wrapper
+                    .best-wrapper__row.best-wrapper__row--top
+                        img(src="images/best1.svg" alt="")
+                        ul 
+                            li.current We offer you the best business model
+                            li We took the largest family entertainment industry and transformed it to a profitable business. We offer you the best business model, unlimited and easily scalable. You invite your friends and partners to play the lottery, just like that. 
+
+                    .best-wrapper__row.best-wrapper__row--bottom
+                        ul 
+                            li.current Affordable ticket prices starting at 1 USD
+                            li No more innovative products of purchasing packs and complex bonus systems. All you need is passion. Affordable ticket prices starting at 1 USD, honest raffles with licensed equipment, live streams and public events.
+                        img(src="images/best2.svg" alt="")
+
+        //- crypto
+        .crypto#crypto
+            .crypto__container.container 
+                .crypto__block.block-crypto
+                    h2.crypto__title.inner-title <span class="color">Сryptocurrency</span> as a payment instrument
+                    img(src="images/crypto.svg" alt="" hidden)
+                    .crypto__content.content-crypto 
+                        img(src="images/crypto.svg" alt="")
+                        .content-crypto__text
+                            p 99% of all online platforms will accept cryptocurrency in the next 5 years
+                            p We make all payments in cryptocurrencies.
+                    .crypto__bottom 
+                        p Today cryptocurrencies are no longer super complex and incomprehensible system for financial speculation. Stablecoins transformed cryptocurrencies into handy and reliable payment tool. 
+                .ctypto__list 
+                    ul.list-crypto 
+                        li
+                            img(src="images/crypto/item1.svg" alt="")
+                            p Worldwide payments
+                        li
+                            img(src="images/crypto/item2.svg" alt="")
+                            p Anonymous payment
+                        li
+                            img(src="images/crypto/item3.svg" alt="")
+                            p Simply to use
+                        li
+                            img(src="images/crypto/item4.svg" alt="")
+                            p Мinimal commissions
+                        li
+                            img(src="images/crypto/item5.svg" alt="")
+                            p No taxes
+                        li
+                            img(src="images/crypto/item6.svg" alt="")
+                            p International transfers of any volume
+
+        //- optins
+        .options#business
+            .options__container.container
+                h2.options__title.inner-title <span class="color">Business</span> options
+                .options__wrapper.wrapper-options
+                    //- item
+                    .wrapper-options__item.item
+                        .item__head
+                            h3.item__title  Partner offer<span class="color">Special</span>
+                            span.item__price 499 $
+                        ul.item__list
+                            li 1 lvl structure depth
+                            li 15% from the income of partners
+                            li Revenue from license sales (in depth*)
+                            li 10% from direct players winnings
+                            li 10% from partners winnings income
+                            li Free bingo tickets
+                            li Exclusive 1/10,000 partner status
+                            li 50 Ormino tokens
+                            li 10 tokens for every 100 direct players
+                        .item__income 
+                            ul 
+                                li.current ~3,000 USD income
+                                li You have invited just 10 friends
+                            ul 
+                                li.current ~7,500 USD income
+                                li You have invited 25 friends
+                        .item__get
+                            button Get Started
+                        .item__note 
+                            p *The calculation is made according to the average contract price of 2,000 USD and 1 lvl max depth
+                    //- item
+                    .wrapper-options__item.item.active
+                        .item__head
+                            h3.item__title  Partner offer <span class="color">Premium</span>
+                            span.item__price 2,199 $
+                        ul.item__list
+                            li 3 lvl structure depth
+                            li 15% from the income of partners
+                            li Revenue from license sales (in depth*)
+                            li 10% from direct players winnings
+                            li 10% from partners winnings income
+                            li Free bingo tickets
+                            li Exclusive 1/5,000 partner status
+                            li 300 Ormino tokens
+                            li 15 tokens for every 100 direct players
+                        .item__income 
+                            ul 
+                                li.current ~7,500 USD income
+                                li You invited 3 friends, and each of them has 3 more, and they have 3 more
+
+                            ul 
+                                li.current ~45,000 USD income
+                                li You invited 5 friends, and each of them has 5 more, and they have 5 more
+
+                        .item__get
+                            button Get Started
+                        .item__note 
+                            p *The calculation is made according to the average contract price of 2,000 USD and 3 lvl max depth
+                    //- item
+                    .wrapper-options__item.item
+                        .item__head
+                            h3.item__title  Partner offer <span class="color">Vip</span>
+                            span.item__price 3,499 $
+                        ul.item__list
+                            li 5 lvl structure depth
+                            li 15% from the income of partners
+                            li Revenue from license sales (in depth*)
+                            li 10% from direct players winnings
+                            li 10% from partners winnings income
+                            li Free bingo tickets
+                            li Exclusive 1/2,500 partner status
+                            li 500 Ormino tokens
+                            li 20 tokens for every 100 direct players
+                        .item__income 
+                            ul 
+                                li.current ~80,000 USD income
+                                li You invited 3 friends, and each of them has 3 more, and they have 3 more
+
+                            ul 
+                                li.current ~1,400,000 USD income
+                                li You invited 5 friends, and each of them has 5 more, and they have 5 more
+
+                        .item__get
+                            button Get Started
+                        .item__note 
+                            p *The calculation is made according to the average contract price of 2,000 USD and 5 lvl max depth
+
+        //- footer
+        footer.main-footer  
+            .container
+                p All offers are time and quantity limited!
+
+
+    include modules/script.pug

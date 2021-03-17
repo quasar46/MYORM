@@ -1,0 +1,11 @@
+.best {
+    background: #eeeff3;
+    padding-top: 85px;
+    @media (max-width: 767.98px) {
+        padding-top: 40px;
+    }
+}
+
+.best__title {
+    margin-bottom: 60px;
+}

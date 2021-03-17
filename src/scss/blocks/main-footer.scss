@@ -1,0 +1,17 @@
+.main-footer {
+    background: #eeeff3;
+    padding: 130px 0;
+    padding-top: 170px;
+    p {
+        text-align: center;
+        font-size: 36px;
+        font-weight: 700;
+        color: $color-black;
+        @media (max-width: 459.98px) {
+            font-size: 28px;
+        }
+    }
+    @media (max-width: 767.98px) {
+        padding: 50px 0;
+    }
+}

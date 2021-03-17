@@ -1,0 +1,21 @@
+@import "../../node_modules/normalize.scss/normalize.scss";
+// @import "../fonts/stylesheet.scss";
+@import "variables.scss";
+@import "base.scss";
+
+@import "blocks/main-header";
+@import "blocks/main-menu";
+@import "blocks/for-user-block";
+@import "blocks/hero";
+@import "blocks/video";
+@import "blocks/inner-title";
+@import "blocks/world";
+@import "blocks/hidden";
+@import "blocks/best-wrapper";
+@import "blocks/best";
+@import "blocks/crypto";
+@import "blocks/content-crypto";
+@import "blocks/list-crypto";
+@import "blocks/options";
+@import "blocks/item";
+@import "blocks/main-footer";

@@ -1,0 +1,21 @@
+.options {
+    background: #eeeff3;
+    padding-top: 125px;
+    // padding-bottom: 170px;
+    @media (max-width: 767.98px) {
+        padding-top: 40px;
+    }
+}
+
+.options__title {
+    margin-bottom: 73px;
+}
+
+.options__wrapper {
+    display: flex;
+    @media (max-width: 1365.98px) {
+        flex-direction: column;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}

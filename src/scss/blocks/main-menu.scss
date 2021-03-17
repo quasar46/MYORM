@@ -1,0 +1,44 @@
+.main-menu {
+    display: flex;
+    li {
+        margin-right: 47px;
+        a {
+            color: #4f5665;
+            font-size: 16px;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+        &:hover,
+        &:focus {
+            a {
+                transition: ease 0.3s;
+                color: $color-orange;
+            }
+        }
+        @media (max-width: 1365.98px) {
+            margin-right: 20px;
+        }
+    }
+    @media (max-width: 1059.98px) {
+        display: none;
+        &.active {
+            display: flex;
+            position: absolute;
+            top: -20px;
+            left: 0;
+            width: 100%;
+            background-color: #fff;
+            z-index: 2;
+            flex-direction: column;
+            padding: 70px 20px;
+            margin-top: 0;
+            li {
+                margin-bottom: 20px;
+                a {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}

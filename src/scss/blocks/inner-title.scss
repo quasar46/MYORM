@@ -1,0 +1,11 @@
+.inner-title {
+    font-size: 48px;
+    font-weight: 700;
+    color: $color-black;
+    @media (max-width: 1365.98px) {
+        text-align: center;
+    }
+    @media (max-width: 459.98px) {
+        font-size: 30px;
+    }
+}

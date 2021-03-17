@@ -1,0 +1,110 @@
+.best {
+    padding-bottom: 445px;
+    @media (max-width: 767.98px) {
+        padding-bottom: 50px;
+    }
+}
+
+.best-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 1030px;
+    margin: 0 auto;
+    @media (max-width: 1059.98px) {
+        max-width: 500px;
+    }
+}
+
+.best-wrapper__row {
+    display: flex;
+    align-items: center;
+    ul {
+        li {
+            line-height: 1.4;
+            color: #8e8e8e;
+            max-width: 358px;
+            width: 100%;
+        }
+    }
+    .current {
+        position: relative;
+        font-size: 24px;
+        font-weight: 700;
+        color: $color-black;
+        margin-bottom: 20px;
+        max-width: 250px;
+        width: 100%;
+        &::before {
+            content: "";
+            position: absolute;
+            left: -45px;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            background-image: url("../images/current.svg");
+            background-size: cover;
+            @media (max-width: 459.98px) {
+                left: 0;
+            }
+        }
+        @media (max-width: 459.98px) {
+            padding-left: 30px;
+        }
+    }
+    &--top {
+        margin-bottom: 20px;
+        ul {
+            // margin-left: 200px;
+            padding-left: 50px;
+            @media (max-width: 1059.98px) {
+                padding-left: 0;
+                margin-left: 45px;
+            }
+            @media (max-width: 767.98px) {
+                margin-left: 20px;
+            }
+            @media (max-width: 459.98px) {
+                margin-left: 0;
+            }
+        }
+        img {
+            position: relative;
+            left: -60px;
+            @media (max-width: 1059.98px) {
+                left: 0;
+            }
+        }
+        @media (max-width: 767.98px) {
+            margin-bottom: 40px;
+        }
+    }
+    &--bottom {
+        ul {
+            padding-left: 75px;
+            @media (max-width: 1059.98px) {
+                order: 1;
+                margin-left: 45px;
+                padding-left: 0;
+                margin-right: 0;
+            }
+            @media (max-width: 459.98px) {
+                margin-left: 0;
+            }
+        }
+        img {
+            position: relative;
+            right: -20px;
+            @media (max-width: 1059.98px) {
+                right: 0;
+            }
+        }
+    }
+    img {
+        @media (max-width: 1059.98px) {
+            width: 50%;
+        }
+    }
+    @media (max-width: 1059.98px) {
+        flex-direction: column;
+    }
+}
